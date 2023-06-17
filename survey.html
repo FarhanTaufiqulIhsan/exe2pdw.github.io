@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="survey.css">
+    <title>Halaman Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Seberapa Kenal Anda Dengan Boy Pablo</h3>
+        </div>
+        <form action="#">
+            <label for="nama"></label><br>
+            <input type="text" placeholder="Nama anda" id="nama"><br><br>
+            <label for="tanggal">Tanggal Pengisian Form:</label><br>
+            <input type="date" name="tanggal" id="tanggal"><br><br>
+            <label for="angkatan">Tahun Berapa Anda Mengenal Boy Pablo:</label><br>
+            <select name="angkatan" id="angkatan">
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+            </select><br><br>
+            <div style="border: 1px solid black; padding-bottom: 10px; border-radius: 10px; width: 75%;">
+                <p style="padding-left: 10px;">Darimana anda mengenalnya:</p>
+                <input type="radio" name="kenal" id="TikTok" value="Tik Tok">
+                <label for="TikTok">Tik Tok</label> <br>
+                <input type="radio" name="kenal" id="Instagram" value="Instagram">
+                <label for="Instagram">Instagram</label> <br>
+                <input type="radio" name="kenal" id="Facebook" value="Facebook">
+                <label for="Facebook">Facebook</label><br>
+            </div><br>
+
+            <label for="suka">Tulis mengapa anda suka Boy Pablo:</label><br>
+            <textarea placeholder="Tulis mengapa anda suka Boy Pablo" name="suka" id="suka" cols="30" rows="5"
+                class="suka"></textarea><br><br>
+            <label for="arti">Apa arti lagu Sick Feeling bagi mu:</label><br>
+            <textarea placeholder="Apa arti lagu Sick Feeling bagi mu" name="arti" id="arti" cols="30" rows="5"
+                class="arti"></textarea><br><br>
+
+            <button type="submit" onclick="displayFormData()">Submit</button>
+        </form>
+    </div>
+</body>
+<script src="survey.js"></script>
+
+</html>
